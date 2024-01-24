@@ -1,0 +1,55 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+#tree-container {
+  padding: 20px;
+}
+
+#tree {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.node {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.node:hover {
+  background-color: #eee;
+}
+
+.node.active {
+  background-color: #e0ffe0;
+  border-color: #4caf50;
+}
+
+.node .node-text {
+  flex-grow: 1;
+}
+
+.node .node-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.node button {
+  background-color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.node button:hover {
+  background-color: #f2f2f2;
+}
